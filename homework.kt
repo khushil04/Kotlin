@@ -21,7 +21,7 @@
         println("no discount")
     
 }}
-
+// another method
 fun main() {
 
 val hasMembership=false
