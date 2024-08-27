@@ -49,3 +49,38 @@ val hasMembership=false
     }
     
 }
+//class 26-08-24
+//HW
+/// calculator using arithemetic operators
+fun main(){ 
+ var a=10
+var b=20
+val choice = '+'
+val result = when (choice){
+    '+' -> a+b
+    '-'->a-b
+    '/'->a/b
+    '*'->a*b
+    '%'->a%b
+    else  -> "choice out of bound"
+}
+println(result)
+ }
+ 
+ // using the loop print and add even numbers and sum of the array 
+
+
+val numbers:Array<Int> = arrayOf(1,2,3,4,5,6,7,8,9,10)
+var sum=0;
+    
+        for(i in numbers){
+            if(i%2==0){
+                 print(i)
+            sum=sum+i
+            print(" ")
+                      
+              }
+                    
+        }
+        println()
+                    println("sum of even numbers" +sum)
