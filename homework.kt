@@ -84,3 +84,54 @@ var sum=0;
         }
         println()
                     println("sum of even numbers" +sum)
+
+
+                    
+
+/// this program calculate factorial function 
+
+fun factorial(): Int{
+ 
+    var result =1
+    for(i in 1 .. 5 )
+    result = result*i
+    println(result)
+    return result  
+}
+fun main(){
+    val x=factorial()
+}
+
+
+
+//this program calculate factorial using recursive function
+fun factorial(n:Int):Int{
+   
+    if(n==0 || n==1){
+    return 1
+    }
+    else{
+        return n*factorial(n-1)
+    } 
+}
+fun main(){
+     var n=5
+    println(factorial(n))
+}
+
+
+//sum of n number using recursive function
+
+fun sum(n: Int): Int {
+     return if (n == 1) {
+       1
+    } else {
+       n + sum(n - 1)
+    }
+}
+
+
+fun main(){
+    var n=3
+    
+    println(sum(n))
