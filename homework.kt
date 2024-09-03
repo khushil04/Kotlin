@@ -135,3 +135,37 @@ fun main(){
     var n=3
     
     println(sum(n))
+
+///class
+
+
+// Define the Person class
+class Person(val name: String, var age: Int) {
+    // Method to display person's details
+    fun displayInfo() {
+        println("Name: $name, Age: $age")
+    }
+}
+
+fun main() {
+    // Create two objects of the Person class
+    val person1 = Person("Alice", 25)
+    val person2 = Person("Bob", 30)
+
+    // Display information for each object
+    person1.displayInfo() // Outputs: Name: Alice, Age: 25
+    person2.displayInfo() // Outputs: Name: Bob, Age: 30
+
+    // Modify the age property of one object
+    person1.age = 26
+    person1.displayInfo() // Outputs: Name: Alice, Age: 26
+}
+
+
+   // Elvis Operator
+    println("\nElvis Operator:")
+    val nullableValue: String? = null
+    val result = nullableValue ?: "Default Value"
+    println("result = $result")  // Output: Default Value (returns right side if left is null)
+}
+    
